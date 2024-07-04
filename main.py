@@ -1,9 +1,10 @@
+import time
 import tkinter as tk
 from tkinter import ttk, messagebox
 from PIL import Image, ImageOps, ImageDraw
 import torch
 from torchvision import transforms
-from net import Net  # 假设 'Net' 是你的神经网络模型
+from net import Net
 
 
 class DigitRecognizerApp:
@@ -87,7 +88,5 @@ if __name__ == '__main__':
     app = DigitRecognizerApp(root)
     root.mainloop()
 
-if __name__ == '__main__':
-    root = tk.Tk()
-    app = DigitRecognizerApp(root)
-    root.mainloop()
+
+
